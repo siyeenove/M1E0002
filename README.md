@@ -12,7 +12,7 @@ mShield uses makecode programming.
 
 	Run following command to download all the files in this repository.
 
-	`git clone https://github.com/siyeenove/M1C0000.git`
+	`git clone https://github.com/siyeenove/M1E0002.git`
 
 	Prerequisite: [Install Git](https://git-scm.com/downloads)
 
