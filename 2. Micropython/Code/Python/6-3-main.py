@@ -18,7 +18,7 @@ servoMode = 2
 
 # Control S1--S4 pins output PWM signal function
 # pin: s1 -- s4
-# pwm: 0 -- 200
+# pwm: 0 -- 200, map:0 -- 2000us, period:2000us
 def setPinPwm(pin, pwm):
     if pin == s1:          
         i2cBuf[0] = s1 

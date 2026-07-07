@@ -38,14 +38,15 @@ def setPinMode(mode):
 def setServo(index, servoType, angle):
     angleMap = 0
     if servoType == servo90:
-        # Map 0-90 to 50-200
-        angleMap = scale(angle, from_=(0, 90), to=(50, 200))
+        # Map 0-90 to 50-250
+        # 50 -- 250 map 500us -- 2500us, period:20000us
+        angleMap = scale(angle, from_=(0, 90), to=(50, 250))
     if servoType == servo180:
-        # Map 0-90 to 50-200
-        angleMap = scale(angle, from_=(0, 180), to=(50, 200))
+        # Map 0-90 to 50-250
+        angleMap = scale(angle, from_=(0, 180), to=(50, 250))
     if servoType == servo270:
-        # Map 0-90 to 50-200
-        angleMap = scale(angle, from_=(0, 270), to=(50, 200))
+        # Map 0-90 to 50-250
+        angleMap = scale(angle, from_=(0, 270), to=(50, 250))
         
     if index == pinS1:
         i2cBuf[0] = pinS1  # S1 pin
